@@ -2,6 +2,7 @@ import React from "react";
 import "./App.css";
 import Navbar from "./components/Navbar";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import Home from "./components/pages/Home";
 
 // file yang dijadikan Router adalah App.js. Karena komponen inilah yang dirender pertama oleh index.js
 // fungsi Router adalah ketika halaman" diklik maka Router akan mengarahkan ke <Route> yang sesuai
@@ -12,9 +13,10 @@ function App() {
   return (
     <>
       <Router>
+        {/* komponen navbar ditempatkan disini, agar setiap swith ke halaman lain komponen navbar tetap ada */}
         <Navbar />
         <Switch>
-          <Route path="/" exact />
+          <Route path="/" exact component={Home} />
         </Switch>
       </Router>
     </>

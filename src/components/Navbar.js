@@ -22,6 +22,7 @@ function Navbar() {
   const handleClick = () => setClick(!click);
   const closeMobileMenu = () => setClick(false);
 
+  // menghilangkan Button ketika layar kurang dari sama dengan 960px
   const showButton = () => {
     if (window.innerWidth <= 960) {
       setButton(false);
@@ -42,6 +43,7 @@ function Navbar() {
       <nav className="navbar">
         <div className="navbar-container">
           {/* ini adalah link logo: TRVL (LOGO) */}
+          {/* ketika diklik akan menclose mobilemenu */}
           <Link to="/" className="navbar-logo" onClick={closeMobileMenu}>
             TRVL <i className="fab fa-typo3" />
           </Link>
