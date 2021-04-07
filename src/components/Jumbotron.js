@@ -1,8 +1,8 @@
 // komponen jumbotron nanti akan dipanggil di page Home
-import React from "react";
-import { Button } from "./Button";
-import "./Jumbotron.css";
-import "../App.css";
+import React from 'react';
+import { Button } from './Button';
+import './Jumbotron.css';
+import '../App.css';
 
 // memanggil file di public tidak perlu "/public"
 // autoPlay loop muted, agar video berputar terus dan muted

@@ -1,7 +1,7 @@
-import React, { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
-import { Button } from "./Button";
-import "./Navbar.css";
+import React, { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
+import { Button } from './Button';
+import './Navbar.css';
 
 //
 function Navbar() {
@@ -36,7 +36,7 @@ function Navbar() {
     showButton();
   }, []);
 
-  window.addEventListener("resize", showButton);
+  window.addEventListener('resize', showButton);
 
   return (
     <>
@@ -50,11 +50,11 @@ function Navbar() {
 
           {/* ini adalah icon bars3 dan silang */}
           <div className="menu-icon" onClick={handleClick}>
-            <i className={click ? "fas fa-times" : "fas fa-bars"} />
+            <i className={click ? 'fas fa-times' : 'fas fa-bars'} />
           </div>
 
           {/* ini adalah list menu navbar */}
-          <ul className={click ? "nav-menu active" : "nav-menu"}>
+          <ul className={click ? 'nav-menu active' : 'nav-menu'}>
             <li className="nav-item">
               <Link to="/" className="nav-links" onClick={closeMobileMenu}>
                 Home
