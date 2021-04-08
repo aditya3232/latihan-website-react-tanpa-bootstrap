@@ -6,8 +6,12 @@ video {
   z-index: -1;
 }
 
+/* 
+- link video ada di komponen jumbotron.js,
+- jika ingin menggunakan video bisa comment background: url();
+*/
 .jumbotron-container {
-  /* background: url("images/img-home.jpg") center center/cover no-repeat; */
+  background: url('/src/static/img-home.jpg') center center/cover no-repeat;
   height: 100vh;
   width: 100%;
   display: flex;

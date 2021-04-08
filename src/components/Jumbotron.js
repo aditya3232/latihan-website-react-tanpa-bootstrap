@@ -9,7 +9,7 @@ import '../App.css';
 function Jumbotron() {
   return (
     <div className="jumbotron-container">
-      <video src="/videos/video-2.mp4" autoPlay loop muted />
+      {/* <video src="/videos/video-2.mp4" autoPlay loop muted /> */}
       <h1>ADVENTURE AWAITS</h1>
       <p>what are you waiting for?</p>
       <div className="jumbotron-btns">
